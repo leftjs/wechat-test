@@ -1,0 +1,56 @@
+{
+  "domain": "http://qs-admin.lefttjs.com",
+  "is_debug": true,
+  "mongodb": {
+    "host": "127.0.0.1",
+    "port": "27017",
+    "db": "passport_demo"
+  },
+  "sms": {
+    "host": "127.0.0.1",
+    "port": "3000"
+  },
+  "wx": {
+    "app_id": "wx926e5c3031482d64",
+    "app_secret": "248630d1718eab25774b5414f944d0f8",
+    "wx_menu": {
+      "button": [
+        {
+          "name": "菜单",
+          "sub_button": [
+            {
+              "type": "view",
+              "name": "资讯菜单",
+              "url": "http://ip:port/all"
+            }
+          ]
+        },
+        {
+          "name": "菜单2",
+          "sub_button": [
+            {
+              "type": "view",
+              "name": "我的11",
+              "url": "http://ip:port/all"
+            }
+          ]
+        },
+        {
+          "name": "助理",
+          "sub_button": [
+            {
+              "type": "view",
+              "name": "大学",
+              "url": "http://ip:port/all"
+            },
+            {
+              "type": "view",
+              "name": "社区",
+              "url": "http://ip:port/all"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
