@@ -9,14 +9,14 @@ var router = express.Router();
 //get cfginfo
 var app_id      = 'wx926e5c3031482d64';
 var app_secret  = '248630d1718eab25774b5414f944d0f8';
-var domin = 'http://qs-admin.lefttjs.com';
+var domain = 'http://qs-admin.lefttjs.com';
 
 // 微信授权和回调npm s
 var client = new OAuth(app_id, app_secret);
 
 // 主页,主要是负责OAuth认证
 router.get('/', function(req, res) {
-    console.log(domin);
+    console.log(domain);
     var url = client.getAuthorizeURL('http://' + domain + '/weixin/callback','','snsapi_userinfo');
     res.redirect(url)
 })
