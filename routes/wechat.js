@@ -21,7 +21,7 @@ router.get('/', function(req, res) {
     res.redirect(url)
 })
 
-/**npm 
+/**npm
  * 认证授权后回调函数
  *
  * 根据openid判断是否用户已经存在
@@ -72,7 +72,7 @@ router.get('/callback', function(req, res) {
                 // if phone_number exist,go home page
                 if(user.is_valid == true){
                     req.session.current_user = user;
-                    res.redirect('/mobile') 
+                    res.redirect('/mobile')
                 }else{
                     //if phone_number exist,go to user detail page to fill it
                     req.session.current_user = void 0;
