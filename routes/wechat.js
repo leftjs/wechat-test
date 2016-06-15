@@ -17,7 +17,7 @@ var client = new OAuth(app_id, app_secret);
 // 主页,主要是负责OAuth认证
 router.get('/', function(req, res) {
     console.log(domain);
-    var url = client.getAuthorizeURL('http://' + domain + '/weixin/callback','','snsapi_userinfo');
+    var url = client.getAuthorizeURL(domain + '/weixin/callback','','snsapi_userinfo');
     res.redirect(url)
 })
 
