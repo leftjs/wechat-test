@@ -16,8 +16,9 @@ var client = new OAuth(app_id, app_secret);
 
 // 主页,主要是负责OAuth认证
 router.get('/', function(req, res) {
-    console.log(domain);
+
     var url = client.getAuthorizeURLForWebsite(domain + '/weixin/callback');
+    console.log(url)
     res.redirect(url)
 })
 
