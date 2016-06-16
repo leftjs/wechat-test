@@ -43,7 +43,7 @@ router.get('/callback', function(req, res) {
 
         console.log('token=' + accessToken);
         console.log('openid=' + openid);
-        client.getUser(openId, function(err,result){
+        client.getUser(openid, function(err,result){
     			if(err) return next(err)
     			console.log('result', result)
     			res.json(result)
